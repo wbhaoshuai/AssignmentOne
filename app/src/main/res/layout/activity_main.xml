@@ -11,31 +11,134 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="10"
         >
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/img_main_banner"/>
-
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+            android:src="@drawable/img_main_banner"
+            />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit quam, efficitur at orci at, luctus aliquam nisi. Aliquam erat volutpat. Etiam pharetra, arcu sit amet pharetra venenatis, massa lacus auctor leo, convallis posuere purus lacus sed tellus. Cras nulla nulla, pharetra in tempor id, rhoncus nec ligula. Nam lacinia, metus ac egestas feugiat, magna diam semper ante, sit amet sodales arcu ipsum quis sem. Sed vestibulum leo eros, nec ultrices quam maximus nec. Vestibulum convallis feugiat enim, in sollicitudin massa. Suspendisse eget nunc suscipit, blandit metus in, aliquam lacus. Praesent semper vel leo eget ultricies. Duis tempus eros sed consectetur ultricies. Curabitur pellentesque erat justo, iaculis porttitor enim rhoncus a. Maecenas at tempus nisl, id venenatis arcu. Donec laoreet diam in felis ultrices ullamcorper. Vivamus congue purus ut metus blandit, eget sodales diam ultrices. Nunc maximus felis nibh, a pharetra lorem ultricies sit amet. Curabitur blandit tellus eget ultricies vehicula.Maecenas varius scelerisque ultrices. Duis libero justo, pulvinar nec dignissim mollis, varius ac nibh. Mauris iaculis tellus eu mi vestibulum tempus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce dignissim turpis vel felis eleifend, ac pellentesque enim pharetra. Donec ullamcorper, orci in imperdiet tincidunt, nibh nibh hendrerit erat, sed elementum magna odio eget turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec et sapien sapien. Curabitur congue ipsum lobortis, lobortis neque ac, varius ex. Nullam non elit finibus, maximus ligula ac, aliquet sem. Sed auctor aliquam diam, vel facilisis augue dapibus sed. Aliquam blandit dignissim libero. Nulla porttitor id neque facilisis eleifend. Proin sit amet urna leo. Duis aliquam malesuada eros, ac imperdiet ex egestas lobortis. Etiam eget sodales libero. Maecenas maximus ex lobortis quam gravida condimentum sit amet a sem. Cras a turpis lacus. Nunc blandit elit felis, nec iaculis ex mollis eu. Fusce pulvinar eget sapien non eleifend. Curabitur vestibulum vulputate eros nec gravida. Nulla mattis, orci quis iaculis volutpat, libero ex pharetra mauris, sit amet pretium neque dolor et lorem. Suspendisse nisi dolor, pretium vulputate justo pellentesque, lacinia pharetra dui. Nulla ullamcorper a mauris accumsan tempor. Duis quis iaculis orci, a volutpat lacus. Vestibulum non diam lorem. Maecenas vel turpis ante. Morbi euismod, sapien a hendrerit lobortis, ligula magna tempor velit, ac rhoncus odio metus ac sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla ultrices condimentum diam et malesuada. Mauris nisl lorem, gravida ut pharetra quis, faucibus nec leo. Maecenas lacinia sem tortor, sed consequat turpis aliquam sit amet. Duis nec lobortis lectus. Aenean id dui auctor, accumsan nulla nec, iaculis felis. Sed pellentesque dui in mauris tempus, sit amet luctus quam porttitor. Mauris finibus nulla eu euismod tristique. In hac habitasse platea dictumst. Phasellus neque lorem, porttitor vel eleifend eget, condimentum tempus ex. Ut in massa lacus. Curabitur in nisl quis mi tempor eleifend in et metus. Aliquam erat volutpat. Curabitur malesuada dapibus eros, ac consequat eros congue id. Nam interdum metus nec urna luctus, vel pretium mauris vestibulum. Nulla risus tellus, mollis at venenatis eu, rutrum vitae ante. Aenean pulvinar tellus fringilla efficitur cursus. Mauris eleifend, tortor accumsan tincidunt eleifend, tellus leo ornare neque, sed congue risus odio ac sem."
-            android:padding="20dp"
-            android:background="@color/purple"
+            android:gravity="center"
+            android:text="@string/title_content"
             android:textColor="@color/white"
+            android:textSize="40sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             />
-    </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_btn_facilities"
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_btn_events"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/facilities"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/events"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_btn_clubs"
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_btn_support"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/clubs"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/support"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </LinearLayout>
+
 </LinearLayout>

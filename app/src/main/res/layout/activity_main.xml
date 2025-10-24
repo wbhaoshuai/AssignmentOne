@@ -42,17 +42,19 @@
         >
         <ImageButton
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="fitCenter"
             android:src="@drawable/img_btn_facilities"
+            android:background="@drawable/button_selector"
             />
         <ImageButton
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="fitCenter"
             android:src="@drawable/img_btn_events"
+            android:background="@drawable/button_selector"
             />
 
     </LinearLayout>
@@ -62,24 +64,25 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:gravity="center_vertical"
         >
         <TextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/facilities"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
+            android:background="@color/green"
             />
 
         <TextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/events"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
+            android:background="@color/green"
             />
 
     </LinearLayout>
@@ -92,17 +95,19 @@
         >
         <ImageButton
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="fitCenter"
             android:src="@drawable/img_btn_clubs"
+            android:background="@drawable/button_selector"
             />
         <ImageButton
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="fitCenter"
             android:src="@drawable/img_btn_support"
+            android:background="@drawable/button_selector"
             />
 
     </LinearLayout>
@@ -112,25 +117,26 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:gravity="center_vertical"
         >
 
         <TextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/clubs"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
+            android:background="@color/green"
             />
 
         <TextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/support"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
+            android:background="@color/green"
             />
 
     </LinearLayout>

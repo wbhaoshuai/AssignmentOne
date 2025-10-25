@@ -13,6 +13,13 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Define a unique identifier constant
+    public static final String EXTRA_ITEM_TYPE = "com.example.assignmentone.ITEM_TYPE";
+    public static final String TYPE_FACILITIES = "facilities";
+    public static final String TYPE_EVENTS = "events";
+    public static final String TYPE_CLUBS = "clubs";
+    public static final String TYPE_SUPPORT = "support";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

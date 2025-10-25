@@ -9,7 +9,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import android.view.View;
-
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,17 +34,29 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickFacilities(View view){
         Toast.makeText(this, "Facilities clicked", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(EXTRA_ITEM_TYPE, TYPE_FACILITIES);
+        startActivity(intent);
     }
 
     public void onClickEvents(View view){
         Toast.makeText(this, "Events clicked", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(EXTRA_ITEM_TYPE, TYPE_EVENTS);
+        startActivity(intent);
     }
 
     public void onClickClubs(View view){
         Toast.makeText(this, "Clubs clicked", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(EXTRA_ITEM_TYPE, TYPE_CLUBS);
+        startActivity(intent);
     }
 
     public void  onClickSupport(View view){
         Toast.makeText(this, "Support clicked", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(EXTRA_ITEM_TYPE, TYPE_SUPPORT);
+        startActivity(intent);
     }
 }

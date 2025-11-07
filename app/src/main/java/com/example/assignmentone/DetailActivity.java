@@ -27,22 +27,28 @@ public class DetailActivity extends AppCompatActivity {
         // 0:Facilities, 1:Events, 2:Clubs, 3:Support
         int itemIndex = getIntent().getIntExtra("POSITION", 0);
 
+        // Retrieve string arrays from resources containing content data
         String[] imageNames = getResources().getStringArray(R.array.string_array_images);
         String[] titles = getResources().getStringArray(R.array.string_array_titles);
         String[] contents = getResources().getStringArray(R.array.string_array_content);
 
+        // Short titles for the top section (corresponding to each item type)
         String[] shortTitles = {"Facilities", "Events", "Clubs", "Support"};
 
+        // Get references to UI elements
         ImageView detailImageView = findViewById(R.id.detailImageView);
         TextView itemTextView = findViewById(R.id.ItemTextView);
         TextView titleTextView = findViewById(R.id.titleTextView);
         TextView contentTextView = findViewById(R.id.contentTextView);
 
+        // Populate UI elements with data based on the selected item index
         itemTextView.setText(shortTitles[itemIndex]);
         titleTextView.setText(titles[itemIndex].trim());
         contentTextView.setText(contents[itemIndex].trim());
 
+        // Load and set the appropriate image based on the image name from resources
         String imageName = imageNames[itemIndex].trim();
+        // Get resource ID for the image using its name
         int imageResId = getResources().getIdentifier(imageName, "drawable", getPackageName());
         detailImageView.setImageResource(imageResId);
     }

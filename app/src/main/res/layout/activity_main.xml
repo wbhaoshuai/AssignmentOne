@@ -83,7 +83,7 @@
             android:text="@string/facilities"
             android:textColor="@color/white"
             android:background="@drawable/text_selector"
-            android:onClick="onTitleClickFacilities"
+            android:onClick="onClickFacilities"
             />
 
         <TextView
@@ -94,7 +94,7 @@
             android:text="@string/events"
             android:textColor="@color/white"
             android:background="@drawable/text_selector"
-            android:onClick="onTitleClickEvents"
+            android:onClick="onClickEvents"
             />
 
     </LinearLayout>
@@ -145,7 +145,7 @@
             android:text="@string/clubs"
             android:textColor="@color/white"
             android:background="@drawable/text_selector"
-            android:onClick="onTitleClickClubs"
+            android:onClick="onClickClubs"
             />
 
         <TextView
@@ -156,7 +156,7 @@
             android:text="@string/support"
             android:textColor="@color/white"
             android:background="@drawable/text_selector"
-            android:onClick="onTitleClickSupport"
+            android:onClick="onClickSupport"
             />
 
     </LinearLayout>

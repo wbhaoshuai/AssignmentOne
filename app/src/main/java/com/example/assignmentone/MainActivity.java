@@ -31,18 +31,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
      // Click handler for Facilities button
     public void onClickFacilities(View view){
-        // Send information to DetailActivity
-        Toast.makeText(this, "Facilities clicked", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra("POSITION", POSITION_FACILITIES);
-        // Open the DetailActivity related page
-        startActivity(intent);
-    }
-
-    public void onTitleClickFacilities(View view) {
         // Send information to DetailActivity
         Toast.makeText(this, "Facilities clicked", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, DetailActivity.class);
@@ -61,25 +51,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onTitleClickEvents(View view) {
-        // Send information to DetailActivity
-        Toast.makeText(this, "Events clicked", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra("POSITION", POSITION_EVENTS);
-        // Open the DetailActivity related page
-        startActivity(intent);
-    }
-
     // Click handler for Clubs button
     public void onClickClubs(View view){
-        // Send information to DetailActivity
-        Toast.makeText(this, "Clubs clicked", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra("POSITION", POSITION_CLUBS);
-        // Open the DetailActivity related page
-        startActivity(intent);
-    }
-    public void onTitleClickClubs(View view) {
         // Send information to DetailActivity
         Toast.makeText(this, "Clubs clicked", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, DetailActivity.class);
@@ -90,14 +63,6 @@ public class MainActivity extends AppCompatActivity {
 
     // Click handler for Support button
     public void  onClickSupport(View view){
-        // Send information to DetailActivity
-        Toast.makeText(this, "Support clicked", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra("POSITION", POSITION_SUPPORT);
-        // Open the DetailActivity related page
-        startActivity(intent);
-    }
-    public void onTitleClickSupport(View view) {
         // Send information to DetailActivity
         Toast.makeText(this, "Support clicked", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, DetailActivity.class);

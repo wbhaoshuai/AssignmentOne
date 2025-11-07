@@ -8,19 +8,21 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <!-- Top banner section, takes 5/10 of total height.
+         Uses ConstraintLayout to overlay text on image -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
         >
-
+        <!-- Banner background image, scaled to fill space while maintaining aspect ratio -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:src="@drawable/img_main_banner"
             />
-
+        <!-- Centered title text displayed over the banner image -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,12 +36,15 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- Function button row, occupies 4/10 of total height.
+         Contains 4 image buttons in horizontal arrangement -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"
         android:orientation="horizontal"
         >
+        <!-- Facilities button with selector background for press feedback -->
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -49,6 +54,7 @@
             android:background="@drawable/button_selector"
             android:onClick="onClickFacilities"
             />
+        <!-- Events button with click handler -->
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -58,7 +64,7 @@
             android:background="@drawable/button_selector"
             android:onClick="onClickEvents"
             />
-
+        <!-- Clubs button with equal weight distribution -->
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -68,6 +74,7 @@
             android:background="@drawable/button_selector"
             android:onClick="onClickClubs"
             />
+        <!-- Support button with centered image scaling -->
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -80,6 +87,8 @@
 
     </LinearLayout>
 
+    <!-- Label row for function buttons, takes 1/10 of total height.
+         Text labels correspond to above buttons in order -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"

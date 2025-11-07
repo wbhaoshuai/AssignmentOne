@@ -8,12 +8,15 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <!-- Top banner area, occupies 10/20 of total height.
+        Uses ConstraintLayout for image-text overlay -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
         >
 
+        <!-- Background image for the banner, cropped to center -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -21,6 +24,7 @@
             android:src="@drawable/img_main_banner"
             />
 
+        <!-- Banner title text, centered over the image -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,12 +38,14 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- First row of function buttons, occupies 4/20 of total height, horizontally arranged -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"
         android:orientation="horizontal"
         >
+        <!-- Image button for facilities, with selector background -->
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -49,6 +55,7 @@
             android:background="@drawable/button_selector"
             android:onClick="onClickFacilities"
             />
+        <!-- Image button for events, with selector background -->
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -61,6 +68,7 @@
 
     </LinearLayout>
 
+    <!-- Label row for first button group, occupies 1/20 of total height -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -89,12 +97,14 @@
 
     </LinearLayout>
 
+    <!-- Second row of function buttons, same height ratio as first button row -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"
         android:orientation="horizontal"
         >
+        <!-- Image button for clubs -->
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -104,6 +114,7 @@
             android:background="@drawable/button_selector"
             android:onClick="onClickClubs"
             />
+        <!-- Image button for support -->
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -116,6 +127,7 @@
 
     </LinearLayout>
 
+    <!-- Label row for second button group, same height ratio as first label row -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
